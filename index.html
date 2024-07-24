@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8171eb40e5.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    
+     <div id="header">
+        
+       <div class="container">
+          <nav>
+            <img src="./assrsts/images/logo1.jpg"  class ="logo">
+            <ul id="sidemenu">
+               <li><a href="#header">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#services">Skills</a></li>
+               <li><a href="#portfolio">Portfolio</a></li>
+               <li><a href="#contact">Contact </a></li>
+               <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+
+            </ul>
+            <i class="fa-solid fa-bars"style="color: #ffffff;" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div class="rows">
+            <div class="header-col-1">
+                <p> Devloper</p><br>
+                <h1> Hi, I'm Garima <br> <span> Joshi</span> From India</h1>
+            </div>
+
+            <br>
+            <div class="header-col-2">
+                <img src="./assrsts/images/phone-cover.jpg">
+
+            </div>
+        </div>
+    </div>
+    
+     
+        
+
+    
+    
+<!-------------about-------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                
+                <img src="./assrsts/images/MY.jpeg">
+                
+            </div>
+            
+
+            <br>
+            
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me</h1><br><br>
+            
+                    <p> Hello! I'm Garima Joshi, an enthusiastic undergraduate student pursuing B.Tech in Robotics & Automation at Dr. APJ Abdul Kalam Institute of Technology, Tanakpur. With a strong passion for technology, I am dedicated to expanding my knowledge and skills in the tech field.
+                        
+                        I have developed proficiency in HTML, CSS, JavaScript, React, NodeJS, MongoDB , and have a foundational understanding of  C & Python. Additionally, I have skills in UI/UX Design. While I am relatively new to this field, my journey of continuous learning and exploration drives me every day. I am particularly skilled in frontend development and am actively working on enhancing my backend development skills.
+                        
+                        I believe in the power of perseverance and hard work, embodying the spirit of never giving up. This mindset keeps me motivated to strive for a bright future in the ever-evolving world of technology. Join me on my journey as I navigate the exciting landscape of robotics and automation.<br><br><br>
+                        
+
+                        Feel free to explore my projects and get in touch!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')"> Experience </p>
+                        <p class="tab-links"onclick="opentab('education')"> Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend</span><br> Web Devlopment(HTML,CSS,JS,REACT)</li><br>
+                            <li><span>Graphics & UI/UX</span><br> Designing Web/App Interfaces(Canva,Figma)</li><br>
+                            <li><span>DBMS</span><br> My SQL</li><br>
+                            <li><span>Backend</span><br> In Progress(NodeJS,MongoDB)</li><br>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="experience">
+                        <ul>
+                            <li><span>Open source Program </span><br> Currently Ongoing</li><br>
+                            <li><span>Internship(30/06/2023-14/08/2023)</span><br> Internship at ZEROVIK(MEAN Stack)</li><br>
+                            <li><span>Work as a coordinator(singing) </span><br> College Fest "AGNI 2023"</li><br>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="education">
+                        <ul>
+                            <li><span>2022-2026(Currently Ongoing)</span><br> B-Tech (Robotics & Automation)</li><br>
+                            <li><span>2022</span><br> Class 12(PCM)</li><br>
+                            <li><span>2020</span><br> Class 10</li><br>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+   </div>   
+</div>
+
+<!-------services----->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services </h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2> Web Design & Dev </h2>
+                <p> "Transforming ideas into digital reality, web design and development craft seamless, interactive platforms that connect and inspire."</p>
+                <a href="#">Learn more..</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-figma"></i>
+
+                <h2> UI/UX Designs </h2>
+                <p>"UI is the saddle, the stirrups, & the reins. UX is the feeling you get being able to ride the horse.”</p>
+                <a href="#">Learn more..</a>
+            </div>
+            
+
+
+
+        </div>
+    </div>
+        
+                        
+    
+</div>
+
+
+<!-----------contact---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact Me!</h1>
+                <p>Drop your message here, and I'll get back to you ASAP.</p>
+                <img src="./assrsts/images/CONTACT.JPG">
+                <p><i class="fa-solid fa-paper-plane"></i>garimajoshi1904@gmail.com</p><br>
+                
+                
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form><br><br>
+                <span id="msg"></span>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/garima-joshi-935284255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_ap"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/jocgarima?igsh=MTlmMGxtbm8xaWNyZQ=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/Garimajosh90269?t=2AiCVMe1h3RE-noEXie2-g&s=09"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/Garimajoshi1"><i class="fa-brands fa-github"></i></a>
+    
+            </div><br><br>
+            
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p> <i class="fa-solid fa-copyright"></i> "Garima Joshi" <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab (tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+<script> 
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbybkKMfUjclf2qH2RIqlaVV-PYJUgJqJ0JxMaoPeSeEk4IbldIsRyJsQq3xTh6oiNDwnw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
